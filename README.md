@@ -3,7 +3,6 @@ kibana-panels
 
 基于kibana3 v0.0.2
 
-和kibana3 v0.0.3有一点不兼容.
 
 ## 安装
 1. 将panels下面的statisticstrend目录拷贝到kibana的app/panels下面.
