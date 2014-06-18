@@ -1,0 +1,20 @@
+<div ng-controller='entry' ng-init="init()">
+    <div style="margin-bottom:10px;">
+        <input ng-model="query" placeholder="Search" class="input-medium search-query">
+    </div>
+    <div>
+        <div class="well"  style="padding:10px;" ng-repeat="mainclass in entriesList | filter:query">
+            <H3 style="margin-top:0px;">{{mainclass.title}}</H3>
+            <div style="margin-left:10px;">
+                <div ng-repeat="subclass in mainclass.data  | filter:query">
+                    <h5 ng-show="subclass.title!=''"><a class="btn btn-info">{{subclass.title}}</a></h5>
+                    <span ng-repeat="title in subclass.data | filter:query">
+                        <a class="btn" style="margin-bottom:5px;" href="/#/dashboard/elasticsearch/{{title}}">
+                            {{title}}
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
