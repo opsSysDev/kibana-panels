@@ -1,7 +1,7 @@
 kibana-panels
 =============
 
-基于kibana3 v0.0.2
+## 基于kibana3 v0.0.2
 
 
 ## 安装
